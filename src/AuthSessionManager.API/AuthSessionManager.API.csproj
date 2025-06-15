@@ -10,4 +10,9 @@
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\AuthSessionManager.Application\AuthSessionManager.Application.csproj" />
+      <ProjectReference Include="..\AuthSessionManager.Infrastructure\AuthSessionManager.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>

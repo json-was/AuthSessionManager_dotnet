@@ -6,4 +6,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\AuthSessionManager.Application\AuthSessionManager.Application.csproj" />
+      <ProjectReference Include="..\AuthSessionManager.Domain\AuthSessionManager.Domain.csproj" />
+    </ItemGroup>
+
 </Project>
