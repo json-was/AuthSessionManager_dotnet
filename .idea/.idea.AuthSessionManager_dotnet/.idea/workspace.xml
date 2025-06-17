@@ -10,14 +10,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cb38c19-efd1-4851-949e-c3961e564588" name="Changes" comment="" />
+    <list default="true" id="8cb38c19-efd1-4851-949e-c3961e564588" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/AuthSessionManager.API/Controllers/PingController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AuthSessionManager_dotnet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AuthSessionManager_dotnet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthSessionManager.API/AuthSessionManager.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthSessionManager.API/AuthSessionManager.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthSessionManager.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthSessionManager.API/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;json-was&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/json-was/AuthSessionManager_dotnet.git&quot;,
+    &quot;accountId&quot;: &quot;ef81c539-7b5b-4b89-a32f-2fe39b79ba98&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/fcedb617b237dc31e998d31e01f101e8441948433938518c5f20cec1a845c1/OpenApiInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -34,7 +59,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/project-setup&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -43,7 +68,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.AuthSessionManager.API: IIS Express">
+  <component name="RunManager" selected=".NET Launch Settings Profile.AuthSessionManager.API: http">
     <configuration name="AuthSessionManager.API" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -121,7 +146,18 @@
       <option name="presentableId" value="Default" />
       <updated>1749987130022</updated>
       <workItem from="1749987131571" duration="701000" />
+      <workItem from="1749988099733" duration="3108000" />
+      <workItem from="1750153383605" duration="582000" />
     </task>
+    <task id="LOCAL-00001" summary="✨ feat: add project references">
+      <option name="closed" value="true" />
+      <created>1749988853646</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749988853646</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +178,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="✨ feat: add project references" />
+    <option name="LAST_COMMIT_MESSAGE" value="✨ feat: add project references" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
