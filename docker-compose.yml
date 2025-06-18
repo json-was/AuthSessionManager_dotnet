@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  api:
+    container_name: ASM-API
+    build:
+      context: .
+      dockerfile: src/AuthSessionManager.API/Dockerfile
+    ports:
+      - "5000:5000"
+      - "5001:5001"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__Default=${CONNECTIONSTRING_DEFAULT}
+    depends_on:
+      - db
+
+  db:
+    container_name: ASM-BD
+    image: postgres:17
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

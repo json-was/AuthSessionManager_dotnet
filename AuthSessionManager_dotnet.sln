@@ -1,6 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E722F8CA-865C-49F2-80BC-2D6F6C7EFCF9}"
+	ProjectSection(SolutionItems) = preProject
+		src\docker-compose.yml = src\docker-compose.yml
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthSessionManager.API", "src\AuthSessionManager.API\AuthSessionManager.API.csproj", "{2C6E0414-6127-417C-845B-1C3C104BCA50}"
 EndProject
