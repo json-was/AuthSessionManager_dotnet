@@ -5,22 +5,18 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <UserSecretsId>05dc0327-69d6-4876-ab84-74e0b7f67ecc</UserSecretsId>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.17" />
-        <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.1" />
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.17"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.1"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AuthSessionManager.Application\AuthSessionManager.Application.csproj" />
-      <ProjectReference Include="..\AuthSessionManager.Infrastructure\AuthSessionManager.Infrastructure.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Content Include="..\..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
+        <ProjectReference Include="..\AuthSessionManager.Application\AuthSessionManager.Application.csproj"/>
+        <ProjectReference Include="..\AuthSessionManager.Infrastructure\AuthSessionManager.Infrastructure.csproj"/>
     </ItemGroup>
 
 </Project>

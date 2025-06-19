@@ -8,12 +8,13 @@ services:
       dockerfile: src/AuthSessionManager.API/Dockerfile
     ports:
       - "5000:5000"
-      - "5001:5001"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__Default=${CONNECTIONSTRING_DEFAULT}
+      - ConnectionStrings__Default=${CONNECTION_STRING_DEFAULT}
     depends_on:
       - db
+    env_file:
+      - .env
 
   db:
     container_name: ASM-BD
