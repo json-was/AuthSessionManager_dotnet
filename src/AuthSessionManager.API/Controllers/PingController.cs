@@ -1,4 +1,5 @@
 using AuthSessionManager.Persistence.Contexts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuthSessionManager.API.Controllers;
@@ -8,11 +9,12 @@ namespace AuthSessionManager.API.Controllers;
 public class PingController : ControllerBase
 {
     [HttpGet]
+    [Authorize]
     public IActionResult Get()
     {
         return Ok("pong");
     }
-    
+
     [HttpGet("test-db")]
     public async Task<IActionResult> TestDb([FromServices] AppDbContext db)
     {

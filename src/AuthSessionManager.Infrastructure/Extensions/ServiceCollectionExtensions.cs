@@ -1,3 +1,5 @@
+using AuthSessionManager.Application.Common.Interfaces;
+using AuthSessionManager.Infrastructure.Services;
 using AuthSessionManager.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -13,6 +15,8 @@ public static class ServiceCollectionExtensions
 
         services.AddDbContext<AppDbContext>(options =>
             options.UseNpgsql(connectionString));
+
+        services.AddScoped<ITokenService, TokenService>();
 
         return services;
     }
